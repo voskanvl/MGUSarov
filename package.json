@@ -1,0 +1,25 @@
+{
+    "name": "smi",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite  --host",
+        "build": "tsc && vite build",
+        "preview": "vite preview",
+        "createComponent": " bash ./create-component.bash",
+        "tar": "tar -czvf technics.tar.gz ./dist"
+    },
+    "devDependencies": {
+        "fast-glob": "^3.2.11",
+        "sass": "^1.54.5",
+        "typescript": "^4.6.4",
+        "vite": "^3.0.7",
+        "vite-plugin-pug-transformer": "^1.0.2"
+    },
+    "dependencies": {
+        "@cjting/vite-plugin-svg-sprite": "^0.2.1",
+        "@splidejs/splide": "^4.0.7",
+        "js-yaml": "^4.1.0"
+    }
+}
