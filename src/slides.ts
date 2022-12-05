@@ -17,9 +17,16 @@ export default function slides() {
 
     const splidesInstance = new MSplides();
     const interviews = document.querySelector("#interviews");
+    const interviews1 = document.querySelector("#interviews1");
 
     interviews &&
         splidesInstance.add("#interviews", {
+            type: "loop",
+            arrows: true,
+            pagination: true,
+        });
+    interviews1 &&
+        splidesInstance.add("#interviews1", {
             type: "loop",
             arrows: true,
             pagination: true,
