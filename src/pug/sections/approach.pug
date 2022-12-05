@@ -1,0 +1,16 @@
+section.approach
+    .approach__green-square.green-square.green-square--right-bottom
+    +splide("approach",approach)
+        .approach__slider.grid
+            .approach__left 
+                if(val.title) 
+                    .approach__title.title= val.title
+                .approach__lead.lead!= val.lead 
+                .approach__block
+                    each t in val.text
+                        p.approach__text.text!= t
+            .approach__right
+                each image in val.images 
+                    .approach__image(style=`transform:${image.transform}; top:${image.top};right:${image.right};`)
+                        img.approach__img(src=image.img) 
+                
