@@ -6,3 +6,14 @@ include ./splides.pug
     include ./sections/stats.pug
     include ./sections/review.pug
     include ./sections/impressions.pug
+    +splide("interviews",interviews)
+        .interviews.grid
+            .interviews__left 
+                each image in val.images 
+                    .interviews__image(style=`transform:${image.transform}; top:${image.top};left:${image.left};`)
+                        img.interviews__img(src=image.img) 
+            .interviews__right
+                .interviews__lead.lead!= val.lead 
+                .interviews__block
+                    each t in val.text
+                        p.interviews__text.text!= t

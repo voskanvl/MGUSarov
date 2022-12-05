@@ -16,40 +16,13 @@ export default function slides() {
     }
 
     const splidesInstance = new MSplides();
-    const servicePackage = document.querySelector("#service-package");
-    const tabs = document.querySelector("#tabs");
-    const product = document.querySelector("#product");
+    const interviews = document.querySelector("#interviews");
 
-    servicePackage &&
-        splidesInstance.add("#service-package", {
+    interviews &&
+        splidesInstance.add("#interviews", {
             type: "loop",
-            arrows: false,
-            pagination: false,
-            // perPage: matchRange(innerWidth, ranges),
-            perPage: 4,
-            perMove: 1,
-            // autoWidth: true,
-        });
-    tabs &&
-        splidesInstance.add("#tabs", {
-            type: "loop",
-            arrows: false,
-            pagination: false,
-            perPage: 4,
-            perMove: 1,
-            // padding: { left: 10, right: 20 },
-            // fixedWidth: "25%",
-            focus: "center",
-        });
-    product &&
-        splidesInstance.add("#product", {
-            type: "loop",
-            arrows: false,
-            pagination: false,
-            // perPage: 2,
-            // perMove: 1,
-            focus: "center",
-            autoWidth: true,
+            arrows: true,
+            pagination: true,
         });
     /* RESIZE */
     function debounce(f: Function, ms: number) {
