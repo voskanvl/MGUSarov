@@ -1,13 +1,15 @@
-+splide("interviews2",interviews2)
-    .interviews2.grid
-        .interviews__left 
-            each image in val.images 
-                .interviews__image(style=`transform:${image.transform}; top:${image.top};left:${image.left};`)
-                    img.interviews__img(src=image.img) 
-        .interviews__right
-            if(val.title)
-                .interviews2__title.title= val.title
-            .interviews__lead.lead!= val.lead 
-            .interviews__block
-                each t in val.text
-                    p.interviews__text.text!= t
+.interviews2
+    .interviews2__container.container
+        +splide("interviews2",interviews2)
+            .interviews2__slide.grid
+                .interviews__left 
+                    each image in val.images 
+                        .interviews__image(style=`transform:${image.transform}; top:${image.top};left:${image.left};`)
+                            img.interviews__img(src=image.img) 
+                .interviews__right
+                    if(val.title)
+                        .interviews2__title.title= val.title
+                    .interviews__lead.lead!= val.lead 
+                    .interviews__block
+                        each t in val.text
+                            p.interviews__text.text!= t
