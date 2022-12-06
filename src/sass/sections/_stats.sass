@@ -4,10 +4,20 @@
     &__plug
         width: 413px
         height: 396px
-        transform: matrix(-1, 0.07, 0.07, 1, 0, 0)
-        border: 8px solid #fff
-        background: #777
+        transform: rotate(-4deg)
+        & > *
+            position: absolute
 
     &__list
         padding-left: 16px
         margin: 8px 0 16px
+
+    &__top
+        position: absolute
+        top: -120px
+        width: 100%
+        height: calc(100% + 120px)
+
+    &__science
+        top: -70px
+        left: -70px

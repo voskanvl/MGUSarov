@@ -1,6 +1,22 @@
 @import "@var"
 .up
     position: relative
+    background-color: #F7F7F7
+    &__container
+        padding-bottom: 114px
+    &__back
+        position: absolute
+        top: 0
+        left: 0
+        width: 80%
+        height: 100%
+    //     z-index: 2
+    //     background: url("../../../assets/images/back-top.png") no-repeat
+    //     background-size: contain
+
+    &__logo
+        display: block
+        padding: 40px 0 105px
 
     &__left
         padding-left: 80px
@@ -26,8 +42,8 @@
 
     &__ticket
         position: absolute
-        top: 309px
-        left: 595px
+        top: 325px
+        left: 525px
         background: #A5D936
         transform: rotate(6deg)
         width: 265px
@@ -42,3 +58,9 @@
         line-height: 120%
         text-align: center
         color: #fff
+
+    &__img
+        height: 100%
+        position: absolute
+        top: 0
+        right: 0
