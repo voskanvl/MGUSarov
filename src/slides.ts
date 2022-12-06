@@ -19,6 +19,7 @@ export default function slides() {
     const interviews = document.querySelector("#interviews");
     const interviews1 = document.querySelector("#interviews1");
     const approach = document.querySelector("#approach ");
+    const interviews2 = document.querySelector("#interviews2");
 
     interviews &&
         splidesInstance.add("#interviews", {
@@ -34,6 +35,12 @@ export default function slides() {
         });
     approach &&
         splidesInstance.add("#approach ", {
+            type: "loop",
+            arrows: true,
+            pagination: true,
+        });
+    interviews2 &&
+        splidesInstance.add("#interviews2", {
             type: "loop",
             arrows: true,
             pagination: true,
