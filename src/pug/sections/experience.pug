@@ -2,8 +2,9 @@ section.experience
     .experience__container.container.grid
         .experience__left.scroll
             ul.experience__list
-                each i in [0,1,2,3]
+                each i in ["../../../assets/images/experience/1.jpg","../../../assets/images/experience/2.jpg"]
                     li.experience__plug
+                        img(src=i)
 
         .experience__right 
             p.experience__text.lead Именно по таким специальностям готовят в новом филиале 
