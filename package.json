@@ -12,6 +12,7 @@
     },
     "devDependencies": {
         "fast-glob": "^3.2.11",
+        "json-to-css": "^0.1.0",
         "sass": "^1.54.5",
         "typescript": "^4.6.4",
         "vite": "^3.0.7",

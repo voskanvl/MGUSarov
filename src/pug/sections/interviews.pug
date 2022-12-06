@@ -1,6 +1,9 @@
 .interviews
-    .interviews__container.container
-        +splide("interviews",interviews)
+    +splide("interviews",interviews)
+        if(val.svgs)
+            each svg in val.svgs
+                img.interviews__svg(src=svg.img, style=`top:${svg.top?svg.top:"unset"}; left:${svg.left?svg.left:"unset"}; right:${svg.right?svg.right:"unset"}; bottom:${svg.bottom?svg.bottom:"unset"}; transform:${svg.transform?svg.transform:"unset"}`)
+        .interviews__container.container
             .interviews__slide.grid
                 .interviews__left 
                     each image in val.images 
