@@ -1,7 +1,19 @@
 .stats
     position: relative
     padding-bottom: 110px
+
+    &__container.grid
+        grid-template-columns: minmax(min-content,626px) auto
+
+    &__right
+        display: flex
+        justify-content: center
+        align-items: center
+
     &__plug
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
         width: 413px
         height: 396px
         transform: rotate(-4deg)

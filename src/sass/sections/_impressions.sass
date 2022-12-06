@@ -2,6 +2,9 @@
     position: relative
     column-gap: 0
 
+    &__container.grid
+        grid-template-columns: minmax(min-content, 626px) auto
+
     &__right
         height: 770px
         padding-top: 110px
@@ -15,5 +18,10 @@
         margin-bottom: 24px
 
     &__plug
-        @extend .experience__plug
         margin-top: 89px
+
+    &__svg
+        position: absolute
+        bottom: 0
+        right: 0
+        pointer-events: none
