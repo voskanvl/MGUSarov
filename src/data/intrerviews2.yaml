@@ -2,15 +2,21 @@ interviews2:
   - id: 0
     images: 
       - 
-        img: "https://picsum.photos/400/410"
-        transform: "matrix(-0.97, -0.26, -0.26, 0.97, 0, 0)"
+        img: "../../assets/images/interview2/0-0.jpg"
+        transform: "rotate(15deg)"
         top: 63px
         left: 47px
       - 
-        img: "https://picsum.photos/340/260"
+        img: "../../assets/images/interview2/0-1.jpg"
         transform: "rotate(4deg)"
         top: 291px
         left: 335px
+
+    svgs:
+      - img: "../../assets/svg/interview2/science-rus.svg"
+        bottom: 0%
+        left: 0%
+
     title: Мотивация для молодого поколения
     lead: "В целом научная среда приветливо встречает девушек. «Мотивация — дело личное, но могу рассказать про себя, — делится аспирантка <strong>Мария Ямщикова.</strong> "
     text: 
@@ -19,15 +25,21 @@ interviews2:
   - id: 1
     images: 
       - 
-        img: "https://picsum.photos/264/203"
+        img: "../../assets/images/interview2/1-0.jpg"
         transform: " rotate(5.16deg)"
         top: 144px
         left: 127px
       - 
-        img: "https://picsum.photos/346/266"
+        img: "../../assets/images/interview2/1-1.jpg"
         transform: " rotate(-16deg)"
-        top: 194px
-        left: 252px
+        top: 230px
+        left: 270px
+
+    svgs:
+      - img: "../../assets/svg/interview2/left-vertical-lines-blue.svg"
+        bottom: 0%
+        left: 0%
+
     lead: "Немаловажно и то, как общество относится к достижениям ученых. «Хорошая мотивация — это когда вся страна настроена на науку. К счастью, ее начали ценить», — замечает <strong>Диляра Уразова</strong>."
     text: 
       - "«Безусловно, мотивация должна идти и от государства, и от научно-технических компаний, в виде стипендий, материальных благ и видения будущей карьеры и жизни в целом. Но в то же время нужно “романтизировать” науку, — делится <strong>Максим Вялков</strong>. — Как нам сказал <strong>Валерий Анатольевич Рубаков</strong>, “мы спасаем Вселенную”»."
@@ -35,9 +47,14 @@ interviews2:
   - id: 2
     images: 
       - 
-        img: "https://picsum.photos/460/330"
-        transform: "rotate(-6deg)"
-        top: 155px
+        img: "../../assets/images/interview2/2-0.png"
+        transform: "translateY(-50%)"
+        top: 50%
+        left: 0%
+      - 
+        img: "../../assets/images/interview2/2-1.jpg"
+        transform: "rotate(-6deg) translateY(-50%)"
+        top: 50%
         left: 145px
 
     lead: "«Сейчас повзрослело поколение зумеров, а это люди, стремящиеся к интеллектуальному, высокотехническому и технологическому труду, — говорит <strong>Мария Ямщикова</strong>. — Наверное, поэтому и смещается распределение девушек и мужчин»."
@@ -47,10 +64,16 @@ interviews2:
   - id: 3
     images: 
         - 
-          img: "https://picsum.photos/516/510"
+          img: "../../assets/images/interview2/3-0.jpg"
           transform: "rotate(-3deg)"
           top: 82px
           left: 67px
+
+    svgs:
+      - img: "../../assets/svg/interview2/science.svg"
+        bottom: 0%
+        left: 368px
+        zIndex: 2
 
 
     lead: "Тут царит научная атмосфера постоянного поиска ответов на загадки Вселенной. «Я хочу разобраться. Возможно, разобраться там, где этого еще не сделали остальные, — резюмирует <wbr><stgrong>Валерия Шарова.</stgrong>"
