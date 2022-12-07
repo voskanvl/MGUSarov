@@ -22,12 +22,12 @@ approach:
   - id: 1
     images: 
       - 
-        img: "https://picsum.photos/462/332"
+        img: "../../assets/images/approach/1-0.jpg"
         transform: " rotate(6deg)"
         top: 75px
         right: 199px
       - 
-        img: "https://picsum.photos/338/260"
+        img: "../../assets/images/approach/1-1.jpg"
         transform: " rotate(-12deg)"
         top: 292px
         right: 95px
@@ -35,13 +35,19 @@ approach:
     text: 
       - " «Девушки в большинстве своем намного аккуратнее, и щепетильную работу выполняют усерднее мужчин. Провести серию расчетов? Обработать эксперимент? Мужчины часто ограничиваются оценками, увидели закономерность — и хорошо, половина работы сделана. Девушки будут до последней погрешности все считать, перепроверять и аккуратно записывать»."
   
-  - id: 3
+  - id: 2
     images: 
       - 
-        img: "https://picsum.photos/537/358"
-        transform: "rotate(0)"
-        top: 165px
+        img: "../../assets/images/approach/2-0.jpg"
+        transform: "translateY(-50%)"
+        top: 50%
         right: 124px
+
+    svgs:
+      - img: "../../assets/svg/interview/left-vertical-lines.svg"
+        bottom: "0px"
+        right: "0%"
+        transform: "rotate(180deg) scaleY(1.33)"
 
     lead: "Тщательное ведение документации — важная составляющая научной деятельности. «Кстати, про запись и почерк. У всех моих мужчин-коллег просто ужасный почерк, — жалуется <strong>Мария.</strong>"
     text: 
@@ -50,15 +56,20 @@ approach:
   - id: 3
     images: 
         - 
-          img: "https://picsum.photos/360/240"
+          img: "../../assets/images/approach/3-0.jpg"
           transform: "rotate(8deg)"
-          top: 156px
+          top: 216px
           right: 319px
         - 
-          img: "https://picsum.photos/324/216"
+          img: "../../assets/images/approach/3-1.jpg"
           transform: "rotate(-6deg)"
-          top: 300px
+          top: 350px
           right: 122px
+
+    svgs:
+      - img: "../../assets/svg/approach/pluses.svg"
+        bottom: "47px"
+        right: "45px"
 
 
     lead: "Тем не менее, между мужским и женским коллективом — пусть эти понятия и наполнены стереотипами — девушки выбирают именно мужской. Как признается <strong>Виталия Кулешова,</strong>"
@@ -68,10 +79,16 @@ approach:
   - id: 4
     images: 
       - 
-        img: "https://picsum.photos/524/356"
-        transform: "rotate(-6deg)"
-        top: 118px
+        img: "../../assets/images/approach/4-0.jpg"
+        transform: "rotate(-6deg) translateY(-50%)"
+        top: 50%
         right: 102px
+
+    svgs:
+      - img: "../../assets/svg/approach/science-circle-big.svg"
+        top: "20%"
+        left: "677px"
+        zIndex: 2
 
     lead: "<strong>Мария Ямщикова</strong> тоже признает, что ей легче работать с мужчинами: «Но очень приятно видеть тенденцию, что девушки не уступают парням. Это значит, что, как сейчас <wbr>модно говорить, научный мир <wbr>становится многополярным»."
     text: 
@@ -80,10 +97,16 @@ approach:
   - id: 5
     images: 
       - 
-        img: "https://picsum.photos/460/330"
+        img: "../../assets/images/approach/5-0.jpg"
         transform: "rotate(4deg)"
-        top: 157px
+        top: 257px
         right: 154px
+
+    svgs:
+      - img: "../../assets/svg/approach/mgu-sarov-circle.svg"
+        top: "10%"
+        left: "50%"
+        transform: "translateX(-50%)"
 
     lead: "Нужно ли «исправлять» дисбаланс между количеством мужчин и женщин в науке — вопрос очень спорный. «Выдержать нагрузку обучения на технической специальности могут только очень сильные люди. Мои коллеги обладают этим качеством, — замечает <strong>Валерия Шарова.</strong> — Все ли девушки на такое готовы пойти? Скорее нет, чем да»."
     text: 
@@ -92,10 +115,16 @@ approach:
   - id: 6
     images: 
       - 
-        img: "https://picsum.photos/500/384"
+        img: "../../assets/images/approach/6-0.jpg"
         transform: "rotate(6deg)"
-        top: 126px
+        top: 216px
         right: 124px
+
+    svgs:
+      - img: "../../assets/svg/approach/quotes.svg"
+        top: "13%"
+        left: "55%"
+        transform: "translateX(-50%)"
 
     lead: "Впрочем, главное — окружающий коллектив, поддержка учителей и однокурсников. «Оглядываясь назад, понимаю, что без помощи своих товарищей я бы чисто психологически не выдержала нагрузку, которая ложится на плечи того, кто хочет стать теоретиком, — рассказывает <strong>Виталия Кулешова.</strong>"
     text: 
@@ -104,10 +133,15 @@ approach:
   - id: 7
     images: 
       - 
-        img: "https://picsum.photos/398/382"
+        img: "./../assets/images/approach/7-0.jpg"
         transform: "rotate(-4deg)"
         top: 134px
-        right: 130px
+        right: 80px
+
+    svgs:
+      - img: "../../assets/svg/approach/science-blue.svg"
+        bottom: 0px
+        right: 0px
 
     lead: "На вопрос о том, какой совет можно дать молодому поколению, <strong>Валерия Шарова</strong> сказала: «Отвечу, как моя преподавательница на экзамене по математическому анализу на первом курсе бакалавриата: “Пожалуйста, продержитесь.” Здесь нужно быть <wbr>немного солдатом»."
     text: 
