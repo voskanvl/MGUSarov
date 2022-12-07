@@ -9,7 +9,7 @@ interviews1:
 
     svgs:
       - img: "../../assets/svg/interview1/0-0.svg"
-        top: "216px"
+        bottom: "-120px"
         left: "0px"
       
     lead: "«Наука — понятие довольно общее. Она состоит из многих подразделов, — делится мыслями аспирантка <strong>Мария Ямщикова.</strong>"

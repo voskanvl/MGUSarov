@@ -1,18 +1,32 @@
 .approach
+    position: relative
+
+    &__back
+        background-image: url("../../../assets/images/Ripped_White_Paper_8 6.png")
+        background-repeat: no-repeat
+        top: -28%
+        width: 100%
+        height: 128%
+        position: absolute
+        background-size: cover
     &__image
         @extend .interviews__image
+
+    &__lead
+        margin-bottom: 24px
 
     &__title
         @extend .not__title
 
-    &__slider
-        @extend .interviews
-        background-color: #fff
+    &__slide
+        @extend .interviews__slide
+        // background-color: #fff
         color: #000
         grid-template-columns: 626px auto
 
     &__block
         @extend .interviews__block
+        width: 82%
 
     &__green-square
         z-index: 2

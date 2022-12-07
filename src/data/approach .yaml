@@ -2,10 +2,18 @@ approach:
   - id: 0
     images: 
       - 
-        img: "https://picsum.photos/554/567"
+        img: "../../assets/images/approach/0-0.jpg"
         transform: "rotate(0)"
-        top: 33px
-        right: 116px
+        top: 133px
+        right: 80px
+
+    svgs:
+      - img: "../../assets/svg/approach/science-circle-big.svg"
+        top: "0px"
+        left: "50%"
+        transform: "translateX(-50%)"
+        zIndex: 2
+
     title: «Женский» и «мужской» подход к науке — есть ли разница?
     lead: "«На мой взгляд, мы, девушки, более приближены к реальности,<wbr>— говорит <strong>Диляра Уразова.</strong>"
     text: 
