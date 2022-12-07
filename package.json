@@ -1,5 +1,5 @@
 {
-    "name": "smi",
+    "name": "mgusarov",
     "private": true,
     "version": "0.0.0",
     "type": "module",
@@ -8,7 +8,7 @@
         "build": "tsc && vite build",
         "preview": "vite preview",
         "createComponent": " bash ./create-component.bash",
-        "tar": "tar -czvf technics.tar.gz ./dist"
+        "tar": "tar -czvf mgusarov.tar.gz ./dist"
     },
     "devDependencies": {
         "fast-glob": "^3.2.11",
