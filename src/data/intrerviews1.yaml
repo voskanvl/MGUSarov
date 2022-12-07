@@ -2,10 +2,15 @@ interviews1:
   - id: 0
     images: 
       - 
-        img: "https://picsum.photos/500/384"
+        img: "../../assets/images/interviews1/0-0.jpg"
         transform: "rotate(-3deg)"
         top: 139px
         left: 133px
+
+    svgs:
+      - img: "../../assets/svg/interview1/0-0.svg"
+        top: "216px"
+        left: "0px"
       
     lead: "«Наука — понятие довольно общее. Она состоит из многих подразделов, — делится мыслями аспирантка <strong>Мария Ямщикова.</strong>"
     text: 
@@ -13,20 +18,32 @@ interviews1:
   - id: 1
     images: 
       - 
-        img: "https://picsum.photos/500/382"
+        img: "../../assets/images/interviews1/1-0.jpg"
         transform: " rotate(6deg)"
         top: 127px
         left: 125px
+
+    svgs:
+      - img: "../../assets/svg/interview/science-rus.svg"
+        bottom: "0px"
+        right: "0px"
+
     lead: "Студенты разделяют такой подход. <strong>Максим Вялков</strong> со второго курса «Теоретической физики» признает,"
     text: 
       - " что девушек-технарей мало, но проблема тут не в знаниях и навыках: «Честно говоря, тяжело разделять мужчин и женщин в науке как профессионалов. Мне повезло: я со школы учился в матклассе, где девчонки могли положить каких-то парней “на лопатки” в решении задач. Все зависит больше от самого человека и его желаний»."
+  
   - id: 2
     images: 
       - 
-        img: "https://picsum.photos/556/426"
+        img: "../../assets/images/interviews1/2-0.jpg"
         transform: "rotate(-4deg)"
         top: 117px
         left: 101px
+
+    svgs:
+      - img: "../../assets/svg/interview/left-vertical-lines.svg"
+        top: "0px"
+        left: "0px"
 
     lead: "<strong>Егор Андронов</strong> с первого курса «Прикладной математики и информатики» считает,"
     text: 
@@ -35,10 +52,16 @@ interviews1:
   - id: 3
     images: 
         - 
-          img: "https://picsum.photos/500/384"
+          img: "../../assets/images/interviews1/3-0.jpg"
           transform: "rotate(4deg)"
           top: 140px
           left: 130px
+
+    svgs:
+      - img: "../../assets/svg/interview1/science.svg"
+        top: "100px"
+        left: "50%"
+        transform: "translateX(-50%)"
 
 
     lead: "Как верно заметила магистрантка <strong>Валерия Шарова,</strong>"
@@ -48,15 +71,20 @@ interviews1:
   - id: 4
     images: 
       - 
-        img: "https://picsum.photos/398/382"
-        transform: "matrix(-1, 0.07, 0.07, 1, 0, 0)"
+        img: "../../assets/images/interviews1/4-0.jpg"
+        transform: "rotate(-4deg)"
         top: 99px
         left: 80px
       - 
-        img: "https://picsum.photos/339/262"
+        img: "../../assets/images/interviews1/4-1.jpg"
         transform: "rotate(3deg)"
         top: 343px
         left: 338px
+
+    svgs:
+      - img: "../../assets/svg/interview1/k.svg"
+        bottom: "93px"
+        right: "205px"
 
     lead: "Как верно заметила магистрантка <strong>Валерия Шарова,</strong>"
     text: 
@@ -65,10 +93,15 @@ interviews1:
   - id: 5
     images: 
       - 
-        img: "https://picsum.photos/500/384"
+        img: "../../assets/images/interviews1/5-0.jpg"
         transform: "rotate(-3deg)"
         top: 144px
         left: 133px
+
+    svgs:
+      - img: "../../assets/svg/interview1/rosatom.svg"
+        bottom: "0px"
+        left: "0px"
 
     lead: "По словам <strong>Валерии,</strong>"
     text: 
@@ -77,10 +110,15 @@ interviews1:
   - id: 6
     images: 
       - 
-        img: "https://picsum.photos/500/384"
+        img: "../../assets/images/interviews1/6-0.jpg"
         transform: "rotate(5deg)"
         top: 136px
         left: 127px
+    
+    svgs:
+      - img: "../../assets/svg/interview1/mgusarov.svg"
+        bottom: "33px"
+        left: "32px"
 
     lead: "А для <strong>Диляры Уразовой</strong> кумир"
     text: 
@@ -89,10 +127,23 @@ interviews1:
   - id: 7
     images: 
       - 
-        img: "https://picsum.photos/398/382"
-        transform: "matrix(-0.98, -0.21, -0.21, 0.98, 0, 0)"
-        top: 75px
-        left: 58px
+        img: "../../assets/images/interviews1/7-0.jpg"
+        transform: "rotate(15deg)"
+        top: 100px
+        left: 85px
+      - 
+        img: "../../assets/images/interviews1/7-1.jpg"
+        transform: "rotate(3deg)"
+        top: 343px
+        left: 337px
+
+    svgs:
+      - img: "../../assets/svg/interview1/dn3-dt.svg"
+        bottom: "66px"
+        right: "137px"
+      - img: "../../assets/svg/interview/quotes.svg"
+        top: "84px"
+        left: "45%"
 
     lead: "Рассказывает <strong>Виталия Кулешова.</strong>"
     text: 
