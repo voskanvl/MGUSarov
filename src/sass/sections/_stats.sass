@@ -4,18 +4,12 @@
 
     &__container.grid
         grid-template-columns: minmax(min-content,626px) auto
+        align-items: center
 
     &__right
         display: flex
         justify-content: center
         align-items: center
-        & > svg
-            position: absolute
-            fill: black
-            bottom: 0px
-            right: 22px
-            & > path
-                fill: black
 
     &__plug
         top: 50%
@@ -40,3 +34,14 @@
     &__science
         top: -70px
         left: -70px
+
+    &__quotes
+        bottom: -136px
+        right: -139px
+        & > svg
+            position: absolute
+            fill: black !important
+            bottom: 0px
+            right: 22px
+            & > path
+                fill: black !important
