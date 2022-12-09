@@ -1,4 +1,4 @@
-const OFFSET = 160;
+const OFFSET = (160 / 1920) * window.innerWidth;
 
 export default function redirectScroll(
     blockElement: HTMLElement | null,
@@ -12,38 +12,40 @@ export default function redirectScroll(
     function startRedirect() {
         document.documentElement.style.overflow = "hidden";
     }
-    function isContainerInScreen(element: HTMLElement) {
-        const { top } = element.getBoundingClientRect();
-        return top <= 0 && top > -element.offsetHeight;
-    }
 
-    window.addEventListener("wheel", ({ deltaY }: WheelEvent) => {
-        // if (!isContainerInScreen(blockElement)) return;
-        // startRedirect();
-        // scrollElement.scrollTop += deltaY * 8;
-
+    const handler = (deltaY: number, c: number = 8) => {
         const ScrollOnBottom =
             scrollElement.scrollTop + scrollElement.offsetHeight === scrollElement.scrollHeight;
         const ScrollOnTop = scrollElement.scrollTop <= 0;
 
-        // if (deltaY > 0 && ScrollOnBottom) stopRedirect();
-        // if (deltaY < 0 && ScrollOnTop) stopRedirect();
-        const cb: IntersectionObserverCallback = ([e]) => {
-            if (e.intersectionRatio > 0.9) {
-                if (deltaY > 0 && !ScrollOnBottom) {
-                    startRedirect();
-                    scrollElement.scrollTop += deltaY * 8;
-                    return;
-                }
-                if (deltaY < 0 && !ScrollOnTop) {
-                    startRedirect();
-                    scrollElement.scrollTop += deltaY * 8;
-                    return;
-                }
-                stopRedirect();
-            }
-        };
-        const obsever = new IntersectionObserver(cb);
-        obsever.observe(blockElement);
+        const { top, height } = blockElement.getBoundingClientRect();
+
+        if (deltaY > 0 && !ScrollOnBottom && top < 0) {
+            startRedirect();
+            scrollElement.scrollTop += deltaY * c;
+            return;
+        }
+        if (deltaY < 0 && 0 < top && !ScrollOnTop) {
+            startRedirect();
+            scrollElement.scrollTop += deltaY * c;
+            return;
+        }
+        stopRedirect();
+    };
+
+    let down = 0;
+    let delta = 0;
+    window.addEventListener("touchstart", e => {
+        down = e.changedTouches[0].screenY;
     });
+    window.addEventListener("touchmove", e => {
+        e.preventDefault();
+        handler(-delta, 2);
+    });
+    window.addEventListener("touchend", e => {
+        delta = e.changedTouches[0].screenY - down;
+        console.log(delta);
+    });
+
+    window.addEventListener("wheel", ({ deltaY }: WheelEvent) => handler(deltaY));
 }

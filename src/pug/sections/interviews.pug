@@ -1,16 +1,14 @@
 section.interviews
-    +splide("interviews",interviews)
-        if(val.svgs)
-            each svg in val.svgs
-                img.interviews__svg(src=svg.img, style=`top:${svg.top?svg.top:"unset"}; left:${svg.left?svg.left:"unset"}; right:${svg.right?svg.right:"unset"}; bottom:${svg.bottom?svg.bottom:"unset"}; transform:${svg.transform?svg.transform:"unset"}`)
-        .interviews__container.container
-            .interviews__slide.grid
-                .interviews__left 
-                    each image in val.images 
-                        .interviews__image(style=`transform:${image.transform}; top:${image.top};left:${image.left};`)
-                            img.interviews__img(src=image.img) 
-                .interviews__right
-                    .interviews__lead.lead!= val.lead 
-                    .interviews__block
-                        each t in val.text
-                            p.interviews__text.text!= t
+    - const value = interviews[0]
+    img.interviews__svg(src="../../../assets/svg/interview/left-vertical-lines.svg")
+    .interviews__container.container
+        .interviews__slide.grid
+            .interviews__left 
+                each image in value.images 
+                    .interviews__image(style=`transform:${image.transform}; top:${image.top};left:${image.left};`)
+                        img.interviews__img(src=image.img) 
+            .interviews__right
+                .interviews__lead.lead!= value.lead 
+                .interviews__block
+                    each t in value.text
+                        p.interviews__text.text!= t

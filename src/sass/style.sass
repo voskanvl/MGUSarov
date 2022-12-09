@@ -12,13 +12,23 @@ a
 
 body
     // +wid(1440px)
+    --color-scrollbar: #7777
+    --color-thumb: #000
     font-family: Montserrat, sans-serif
     font-size: 20px
     font-weight: 400
     line-height: 30px
+    scrollbar-width: 3px
+    scrollbar-color: var(--color-scrollbar)
+    &::-webkit-scrollbar
+        width: 3px
+    &::-webkit-scrollbar-track
+        background: var(--color-scrollbar)
+    &::-webkit-scrollbar-thumb
+        background: var(--color-thumb)
 
 .container
-    +wid(1440px)
+    +wid(1295px)
     position: relative
 
 button.splide__arrow

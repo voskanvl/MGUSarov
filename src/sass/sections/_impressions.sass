@@ -3,13 +3,12 @@
     column-gap: 0
     background-image: url(../../../assets/images/Texture-inteviews1.png)
     background-blend-mode: multiply
+    height: 770px
+    display: grid
+    align-items: center
 
     &__container.grid
-        grid-template-columns: minmax(min-content, 626px) auto
-
-    &__right
-        height: 770px
-        padding-top: 50px
+        align-items: center
 
     &__title
         @extend .up__title
@@ -20,7 +19,8 @@
         margin-bottom: 24px
 
     &__plug
-        margin-top: 89px
+        & + &
+            margin-top: 89px
 
     &__svg
         position: absolute
@@ -30,3 +30,4 @@
 
     &__list
         padding-bottom: 89px
+        user-select: none
