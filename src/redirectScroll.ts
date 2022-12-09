@@ -18,15 +18,32 @@ export default function redirectScroll(
     }
 
     window.addEventListener("wheel", ({ deltaY }: WheelEvent) => {
-        if (!isContainerInScreen(blockElement)) return;
-        startRedirect();
-        scrollElement.scrollTop += deltaY * 8;
+        // if (!isContainerInScreen(blockElement)) return;
+        // startRedirect();
+        // scrollElement.scrollTop += deltaY * 8;
 
         const ScrollOnBottom =
             scrollElement.scrollTop + scrollElement.offsetHeight === scrollElement.scrollHeight;
         const ScrollOnTop = scrollElement.scrollTop <= 0;
 
-        if (deltaY > 0 && ScrollOnBottom) stopRedirect();
-        if (deltaY < 0 && ScrollOnTop) stopRedirect();
+        // if (deltaY > 0 && ScrollOnBottom) stopRedirect();
+        // if (deltaY < 0 && ScrollOnTop) stopRedirect();
+        const cb: IntersectionObserverCallback = ([e]) => {
+            if (e.intersectionRatio > 0.9) {
+                if (deltaY > 0 && !ScrollOnBottom) {
+                    startRedirect();
+                    scrollElement.scrollTop += deltaY * 8;
+                    return;
+                }
+                if (deltaY < 0 && !ScrollOnTop) {
+                    startRedirect();
+                    scrollElement.scrollTop += deltaY * 8;
+                    return;
+                }
+                stopRedirect();
+            }
+        };
+        const obsever = new IntersectionObserver(cb);
+        obsever.observe(blockElement);
     });
 }
