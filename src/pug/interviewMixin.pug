@@ -1,7 +1,10 @@
+include ./scrollText.pug
 mixin interviewMixin(className, arr)
     section(class=className)
         - const value = arr[0]
-        img(class=className+"__svg", src=value.svgs[0].img)
+        - const svg = value.svgs[0]
+        if (svg)
+            img(class=className+"__svg", src=svg.img, style=`top:${svg.top?svg.top:"unset"}; left:${svg.left?svg.left:"unset"}; right:${svg.right?svg.right:"unset"}; bottom:${svg.bottom?svg.bottom:"unset"}; transform:${svg.transform?svg.transform:"unset"}; z-index:${svg.zIndex?svg.zIndex:"unset"}`)
         .container(class=className+"__container")
             .grid
                 div(class=className+"__left")
@@ -9,8 +12,8 @@ mixin interviewMixin(className, arr)
                         div(class=className+"__image", style=`transform:${image.transform}; top:${image.top};left:${image.left};`)
                             img(class=className+"__img",src=image.img) 
                 div(class=className+"__right")
-                    .scroll(class=className+"__scroll")
-                        each i in arr
-                            .lead(class=[className+"__post",className+"__lead"].join(" "), data-post=i.id)!= i.lead 
-                            each t in i.text
-                                .text(class=[className+"__post",className+"__text"].join(" "), data-post=i.id)!= t
+                    +scrollText(className,arr)
+                        //- each i in arr
+                        //-     .lead(class=[className+"__post",className+"__lead"].join(" "), data-post=i.id)!= i.lead 
+                        //-     each t in i.text
+                        //-         .text(class=[className+"__post",className+"__text"].join(" "), data-post=i.id)!= t

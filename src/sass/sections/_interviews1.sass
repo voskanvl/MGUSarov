@@ -1,20 +1,11 @@
-.interviews
-    --height: 688px
-    background-color: #126B89
-    background-image: url("../../../assets/images/Texture-inteviews1.png")
-    background-blend-mode: multiply
-    color: #fff
-    position: relative
+.interviews1
+    @extend .interviews
 
     &__slide
-        height: var(--height)
-        padding: 0 80px
-        position: relative
-        overflow: hidden
-        align-items: center
+        @extend .interviews__slide
 
     &__image
-        position: absolute
+        @extend .interviews__image
 
     &__left
         width: 516px

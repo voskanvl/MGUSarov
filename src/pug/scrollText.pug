@@ -1,0 +1,6 @@
+mixin scrollText(className, arr)
+    .scroll(class=className+"__scroll")
+        each i in arr
+            .lead(class=[className+"__post",className+"__lead"].join(" "), data-post=i.id)!= i.lead 
+            each t in i.text
+                .text(class=[className+"__post",className+"__text"].join(" "), data-post=i.id)!= t

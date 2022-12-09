@@ -15,8 +15,8 @@ export default function scrollIO(root: HTMLElement | null) {
     };
     const IO = new IntersectionObserver(cb, {
         root,
-        threshold: [0.9],
-        rootMargin: "48% 0% 48% 0%",
+        threshold: [0.95],
+        rootMargin: "-20% 0% -20% 0%",
     });
     observables.forEach(e => IO.observe(e));
 }
