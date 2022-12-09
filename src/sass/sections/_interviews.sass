@@ -1,4 +1,5 @@
 .interviews
+    --height: 688px
     background-color: #126B89
     background-image: url("../../../assets/images/Texture-inteviews1.png")
     background-blend-mode: multiply
@@ -6,7 +7,7 @@
     // padding-bottom: 120px
 
     &__slide
-        height: 688px
+        height: var(--height)
         padding: 0 80px
         position: relative
         overflow: hidden
@@ -17,6 +18,18 @@
 
     &__left
         width: 516px
+
+    &__scroll
+        height: var(--height)
+        display: flex
+        flex-direction: column
+        row-gap: 2em
+        padding-bottom: 200px
+        & > *
+            opacity: 0.5
+            transition: opacity .2s
+            &.current
+                opacity: 1
 
     &__block
         margin-top: 24px

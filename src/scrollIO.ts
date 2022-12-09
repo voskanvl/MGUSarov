@@ -1,0 +1,22 @@
+export default function scrollIO(root: HTMLElement | null) {
+    const observables: HTMLElement | HTMLElement[] | null =
+        // root && [...root.children].map(e => e as HTMLElement);
+        [...root!.querySelectorAll<HTMLElement>(".interviews__post ")];
+
+    if (!root || !observables) return;
+
+    const cb: IntersectionObserverCallback = e => {
+        console.log(e.map(i => (i.target as HTMLElement).dataset.post));
+        e.forEach(post => {
+            post.target.setAttribute("io", post.isIntersecting + "");
+            if (post.isIntersecting) post.target.classList.add("current");
+            else post.target.classList.remove("current");
+        });
+    };
+    const IO = new IntersectionObserver(cb, {
+        root,
+        threshold: [0.9],
+        rootMargin: "48% 0% 48% 0%",
+    });
+    observables.forEach(e => IO.observe(e));
+}
