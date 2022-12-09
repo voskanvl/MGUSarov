@@ -1,0 +1,16 @@
+mixin interviewMixin(className, arr)
+    section(class=className)
+        - const value = arr[0]
+        img(class=className+"__svg", src=value.svgs[0].img)
+        .container(class=className+"__container")
+            .grid
+                div(class=className+"__left")
+                    each image in value.images 
+                        div(class=className+"__image", style=`transform:${image.transform}; top:${image.top};left:${image.left};`)
+                            img(class=className+"__img",src=image.img) 
+                div(class=className+"__right")
+                    .scroll(class=className+"__scroll")
+                        each i in arr
+                            .lead(class=[className+"__post",className+"__lead"].join(" "), data-post=i.id)!= i.lead 
+                            each t in i.text
+                                .text(class=[className+"__post",className+"__text"].join(" "), data-post=i.id)!= t
