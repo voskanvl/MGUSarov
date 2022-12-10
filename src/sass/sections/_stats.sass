@@ -1,21 +1,21 @@
 .stats
     position: relative
+    overflow: hidden
 
     &__container.grid
         padding-bottom: 110px
         margin-top: 50px
         grid-template-columns: minmax(min-content,626px) auto
+        grid-template-columns: repeat(2,1fr)
         align-items: center
 
     &__right
         display: flex
         justify-content: center
         align-items: center
+        position: relative
 
     &__plug
-        top: 50%
-        left: 50%
-        transform: translate(-50%,-50%)
         width: 413px
         height: 396px
         transform: rotate(-4deg)
@@ -37,8 +37,8 @@
         left: -70px
 
     &__quotes
-        bottom: -136px
-        right: -139px
+        bottom: -143px
+        right: -39px
         & > svg
             position: absolute
             fill: black !important

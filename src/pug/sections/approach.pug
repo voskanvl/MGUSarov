@@ -7,8 +7,7 @@ section.approach
         each svg in value.svgs
             img.interviews__svg(src=svg.img, style=`top:${svg.top?svg.top:"unset"}; left:${svg.left?svg.left:"unset"}; right:${svg.right?svg.right:"unset"}; bottom:${svg.bottom?svg.bottom:"unset"}; transform:${svg.transform?svg.transform:"unset"}; z-index:${svg.zIndex?svg.zIndex:"unset"}`)
     
-    .approach__container.container
-        .approach__slide.grid(style="height: 808px")
+    .approach__container.container.grid(style="height: 808px")
             .approach__left 
                 +scrollText("approach", approach)
                     if(value.title) 
