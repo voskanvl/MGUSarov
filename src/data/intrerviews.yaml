@@ -9,8 +9,8 @@ interviews:
       - 
         img: "../../assets/images/interviews/0-1.jpg"
         transform: "rotate(-12deg)"
-        top: 314px
-        left: 312px
+        top: 229px
+        left: 183px
 
     svgs: 
       - img: "../../assets/svg/interview/left-vertical-lines.svg"

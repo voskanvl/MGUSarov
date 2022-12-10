@@ -8,12 +8,8 @@ mixin interviewMixin(className, arr)
         .container(class=className+"__container")
             .grid
                 div(class=className+"__left")
-                    each image in value.images 
-                        div(class=className+"__image", style=`transform:${image.transform}; top:${image.top};left:${image.left};`)
+                    each image, idx in value.images 
+                        div(class=className+"__image", style=` position:${idx===0?"static":"absolute"};transform:${image.transform}; top:${image.top};left:${image.left};`)
                             img(class=className+"__img",src=image.img) 
                 div(class=className+"__right")
                     +scrollText(className,arr)
-                        //- each i in arr
-                        //-     .lead(class=[className+"__post",className+"__lead"].join(" "), data-post=i.id)!= i.lead 
-                        //-     each t in i.text
-                        //-         .text(class=[className+"__post",className+"__text"].join(" "), data-post=i.id)!= t
