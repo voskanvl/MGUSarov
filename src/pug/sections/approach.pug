@@ -10,9 +10,9 @@ section.approach
     .approach__container.container
         .approach__slide.grid(style="height: 808px")
             .approach__left 
-                if(value.title) 
-                    .approach__title.title= value.title
                 +scrollText("approach", approach)
+                    if(value.title) 
+                        .approach__title.title(style="opacity:1;")= value.title
             .approach__right
                 each image in value.images 
                     .approach__image(style=`transform:${image.transform}; top:${image.top};right:${image.right};`)
