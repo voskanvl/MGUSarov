@@ -1,20 +1,3 @@
 include ../interviewMixin.pug
 +interviewMixin("interviews2", interviews2)
-//- section.interviews2
-//-         +splide("interviews2",interviews2)
-//-             if(val.svgs)
-//-                 each svg in val.svgs
-//-                     img.interviews__svg(src=svg.img, style=`top:${svg.top?svg.top:"unset"}; left:${svg.left?svg.left:"unset"}; right:${svg.right?svg.right:"unset"}; bottom:${svg.bottom?svg.bottom:"unset"}; transform:${svg.transform?svg.transform:"unset"}; z-index:${svg.zIndex?svg.zIndex:"unset"}`)
-//-             .interviews2__container.container(style= index===0?"background: #fff;":"")
-//-                 .interviews2__slide.grid
-//-                     .interviews__left 
-//-                         each image in val.images 
-//-                             .interviews__image(style=`transform:${image.transform}; top:${image.top};left:${image.left};`)
-//-                                 img.interviews__img(src=image.img) 
-//-                     .interviews__right
-//-                         if(val.title)
-//-                             .interviews2__title.title= val.title
-//-                         .interviews__lead.lead!= val.lead 
-//-                         .interviews__block
-//-                             each t in val.text
-//-                                 p.interviews__text.text!= t
+    .interviews2__title(style="opacity: 1") Мотивация для молодого поколения
