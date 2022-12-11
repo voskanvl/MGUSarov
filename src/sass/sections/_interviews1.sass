@@ -6,9 +6,12 @@
 
     &__image
         @extend .interviews__image
+        width: 100%
+        & > img
+            width: 100%
 
     &__left
-        width: 516px
+        width: min(516px, 100%)
 
     &__scroll
         height: var(--height)
