@@ -1,4 +1,5 @@
 @import "@var"
+$BREAKPOINT_TITLE: 999px
 .up
     position: relative
     background-color: #F7F7F7
@@ -44,16 +45,22 @@
 
     &__title
         font-weight: 800
-        font-size: 140px
+        font-size: clamp(100px, 140/1150*100vw, 140px)
         line-height: 95%
         letter-spacing: -0.04em
         color: #249788
         +wid(735px)
         margin-left: 0
+        position: relative
+        @media (width < $BREAKPOINT_TITLE)
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: start
 
     &__ticket
         position: absolute
-        top: 325px
+        top: 143px
         left: 525px
         background: #A5D936
         transform: rotate(6deg)
@@ -69,6 +76,10 @@
         line-height: 120%
         text-align: center
         color: #fff
+        letter-spacing: normal
+        @media (width < $BREAKPOINT_TITLE)
+            position: static
+            transform: rotate(-6deg)
 
     &__img
         height: 100%
