@@ -8,11 +8,10 @@ approach:
         right: 80px
 
     svgs:
-      - img: "../../assets/svg/approach/science-circle-big.svg"
-        top: "0px"
-        left: "50%"
-        transform: "translateX(-50%)"
-        zIndex: 2
+      - img: "../../assets/svg/approach/mgu-sarov-circle-big.svg"
+        top: "50%"
+        right: "0%"
+        transform: "translateY(-50%)"
 
     title: «Женский» и «мужской» подход к науке — есть ли разница?
     lead: "«На мой взгляд, мы, девушки, более приближены к реальности,<wbr>— говорит <strong>Диляра Уразова.</strong>"
