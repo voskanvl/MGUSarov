@@ -47,8 +47,13 @@
         & > .interviews__text + .interviews__text
             margin-top: 16px
 
-    &__svg[style]
+    &__svg.image-svg[style]
         position: absolute
         background-position: 0 100%
         @media ($MOBILE)
-            all: unset !important
+            // all: unset !important
+            bottom: unset !important
+            top: -25px !important
+            width: 192px
+            height: 275px
+            background-size: 100%

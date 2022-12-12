@@ -3,6 +3,9 @@
     position: relative
     background: url("../../../assets/images/Texture-inteviews1.png")
     overflow: hidden
+    @media ($MOBILE)
+        padding-block: 58px
+
     &__title
         @extend .impressions__title
         @media ($MOBILE)
@@ -18,6 +21,8 @@
         position: relative
         & > img
             width: 100%
+        @media ($MOBILE)
+            grid-area: 1 / 1 / 2 / 2
 
     &__svg[src]
         position: absolute
@@ -25,3 +30,4 @@
         right: calc(-260/1920*100vw)
         width: calc(720/1920*100vw)
         z-index: -1
+        @media ($MOBILE)
