@@ -7,12 +7,16 @@
         grid-template-columns: minmax(min-content,626px) auto
         grid-template-columns: repeat(2,1fr)
         align-items: center
+        @media ($MOBILE)
+            grid-template-columns: 100%
 
     &__right
         display: flex
         justify-content: center
         align-items: center
         position: relative
+        @media ($MOBILE)
+            grid-area: 1 / 1 / 2 / 2
 
     &__plug
         width: min(413px, 100%)
@@ -65,3 +69,5 @@
         line-height: 105%
         @media (width<1024px)
             bottom: -150px
+        @media ($MOBILE)
+            display: none

@@ -1,11 +1,17 @@
 .experience
     padding-top: 120px
+    @media ($MOBILE)
+        margin-bottom: 100px
 
     &__container
         align-items: start
 
     &__left
         height: 707px
+        &.scroll
+            @media ($MOBILE)
+                overflow: unset
+                height: unset
 
     &__small
         display: block
@@ -21,6 +27,9 @@
         padding-inline: 0
         padding-block: 0
         padding-bottom: 167px
+        @media ($MOBILE)
+            align-items: center
+            padding-bottom: 24px
 
     &__plug
         list-style: none
@@ -31,3 +40,6 @@
         left: 274px
         z-index: 0
         pointer-events: none
+        @media ($MOBILE)
+            left: unset
+            right: 0
