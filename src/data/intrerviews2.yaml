@@ -9,14 +9,14 @@ interviews2:
       - 
         img: "../../assets/images/interview2/0-1.jpg"
         transform: "rotate(4deg)"
-        top: 291px
-        left: 335px
+        top: 451px
+        left: calc(200/1920*100vw)
 
     svgs:
       - img: "../../assets/svg/interview2/science-rus.svg"
         bottom: 0%
         left: 0%
-        zIndex: 1
+        zIndex: "0"
 
     title: Мотивация для молодого поколения
     lead: "В целом научная среда приветливо встречает девушек. «Мотивация — дело личное, но могу рассказать про себя, — делится аспирантка <strong>Мария Ямщикова.</strong> "

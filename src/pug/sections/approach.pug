@@ -3,7 +3,9 @@ section.approach
     .approach__green-square.green-square.green-square--right-bottom
     .approach__back
     - const value = approach[0]
-    
+    if(value.svgs)
+        each svg in value.svgs
+            img.interviews__svg(src=svg.img, style=`top:${svg.top?svg.top:"unset"}; left:${svg.left?svg.left:"unset"}; right:${svg.right?svg.right:"unset"}; bottom:${svg.bottom?svg.bottom:"unset"}; transform:${svg.transform?svg.transform:"unset"}; z-index:${svg.zIndex?svg.zIndex:"unset"}`)
     .approach__container.container.grid
             .approach__left 
                 +scrollText("approach", approach)
@@ -12,8 +14,6 @@ section.approach
             .approach__right
                 each image in value.images 
                     .approach__image(style=`transform:${image.transform}; top:${image.top};right:${image.right};`)
-                        if(value.svgs)
-                            each svg in value.svgs
-                                img.interviews__svg(src=svg.img, style=`top:${svg.top?svg.top:"unset"}; left:${svg.left?svg.left:"unset"}; right:${svg.right?svg.right:"unset"}; bottom:${svg.bottom?svg.bottom:"unset"}; transform:${svg.transform?svg.transform:"unset"}; z-index:${svg.zIndex?svg.zIndex:"unset"}`)
+                        
                         img.approach__img(src=image.img) 
                     
