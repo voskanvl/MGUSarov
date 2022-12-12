@@ -5,8 +5,8 @@ mixin interviewMixin(className, arr)
         - const svg = value.svgs[0]
         if (svg)
             div(class=className+"__svg image-svg",style=` --src:url("${svg.img}");top:${svg.top?svg.top:"unset"}; left:${svg.left?svg.left:"unset"}; right:${svg.right?svg.right:"unset"}; bottom:${svg.bottom?svg.bottom:"unset"}; transform:${svg.transform?svg.transform:"unset"}; z-index:${svg.zIndex?svg.zIndex:"unset"}`)
-        .container(class=className+"__container")
-            .grid
+        .container(class=className+"__container grid")
+            
                 div(class=className+"__left")
                     each image, idx in value.images 
                         div(class=className+"__image", style=` position:${idx===0?"static":"absolute"};transform:${image.transform}; top:${image.top};left:${image.left};`)

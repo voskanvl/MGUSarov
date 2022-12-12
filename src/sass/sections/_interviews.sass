@@ -6,6 +6,9 @@
     color: #fff
     position: relative
 
+    &__container.grid
+        justify-items: center
+
     &__slide
         height: var(--height)
         padding: 0 80px
@@ -14,11 +17,16 @@
         align-items: center
 
     &__image
+        @media ($MOBILE)
+            width: 100%
+
         // position: absolute
 
     &__left
         position: relative
         transform: translateY(-17%)
+        transform: none
+        // margin: 150px 0
 
     &__scroll
         height: var(--height)
@@ -32,6 +40,12 @@
             z-index: 2
             &.current
                 opacity: 1
+        @media ($MOBILE)
+            &.scroll
+                height: auto
+                overflow: unset
+                & > *
+                    opacity: 1
 
     &__block
         margin-top: 24px

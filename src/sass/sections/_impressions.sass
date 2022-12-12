@@ -6,6 +6,9 @@
     height: 770px
     display: grid
     align-items: center
+    @media ($MOBILE)
+        padding-top: 32px
+        height: unset
 
     &__container.grid
         align-items: center
@@ -27,6 +30,10 @@
         bottom: 0
         right: 0
         pointer-events: none
+        @media ($MOBILE)
+            bottom: unset
+            // top: 620px
+            top: 20%
 
     &__list
         padding-bottom: 89px
@@ -35,3 +42,10 @@
     &__right
         & > img
             width: 100%
+            &:nth-child(2)
+                display: none
+        @media ($MOBILE)
+            grid-area: 1 / 1 / 2 / 2
+            & > img
+                &:nth-child(2)
+                    display: block
