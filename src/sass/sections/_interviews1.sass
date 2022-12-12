@@ -13,15 +13,12 @@
     &__slide
         @extend .interviews__slide
 
-    &__image
-        @extend .interviews__image
+    &__img
+        display: block
         width: 100%
-        & > img
-            display: block
-            width: 100%
-            @media($MOBILE)
-                width: 80%
-                margin: 0 auto
+        @media($MOBILE)
+            width: 80%
+            margin: 0 auto
 
     &__left
         width: min(516px, 100%)

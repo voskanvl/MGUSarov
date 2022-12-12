@@ -2,15 +2,15 @@ interviews2:
   - id: 0
     images: 
       - 
-        img: "../../assets/images/interview2/0-0.jpg"
-        transform: "rotate(15deg)"
+        img: "../../assets/images/interview2/interview2.png"
+        transform: "rotate(0deg)"
         top: 63px
         left: 47px
-      - 
-        img: "../../assets/images/interview2/0-1.jpg"
-        transform: "rotate(4deg)"
-        top: 451px
-        left: calc(200/1920*100vw)
+      # - 
+      #   img: "../../assets/images/interview2/0-1.jpg"
+      #   transform: "rotate(4deg)"
+      #   top: 451px
+      #   left: calc(200/1920*100vw)
 
     svgs:
       - img: "../../assets/svg/interview2/science-rus.svg"

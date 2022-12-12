@@ -7,7 +7,8 @@
 
     &__container.container
         padding: 125px 0
-        // width: 100%
+        @media ($MOBILE)
+            padding: 20px 0
 
     &__slide
         @extend .interviews__slide
@@ -25,3 +26,6 @@
             width: 100%
             background-position: 0% 100%
             background-size: auto
+
+    &__img
+        width: 100%

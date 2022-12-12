@@ -9,8 +9,7 @@ mixin interviewMixin(className, arr)
             
                 div(class=className+"__left")
                     each image, idx in value.images 
-                        div(class=className+"__image", style=` position:${idx===0?"static":"absolute"};transform:${image.transform}; top:${image.top};left:${image.left};`)
-                            img(class=className+"__img",src=image.img) 
+                        img(class=className+"__img",src=image.img, style=` position:${idx===0?"static":"absolute"};transform:${image.transform}; top:${image.top};left:${image.left};`) 
                 div(class=className+"__right")
                     +scrollText(className,arr)
                         block

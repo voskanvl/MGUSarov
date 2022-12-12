@@ -28,7 +28,7 @@
     &__image
         @extend .interviews__image
         @media ($MOBILE)
-            width: 50%
+            width: 80%
             display: flex
             margin: 0 auto
 
@@ -62,3 +62,9 @@
     &__right
         @media ($MOBILE)
             grid-area: 1 / 1 / 2 / 2
+
+    & > .interviews__svg[src]
+        @media ($MOBILE)
+            top: 100px !important
+            width: 80%
+            left: -43px
