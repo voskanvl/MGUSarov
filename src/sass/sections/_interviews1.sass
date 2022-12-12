@@ -1,6 +1,14 @@
 .interviews1
     @extend .interviews
     height: 800px
+    @media ($MOBILE)
+        height: unset
+
+    &__container
+        @media($MOBILE)
+            justify-items: center
+            padding-top: 58px
+            row-gap: 52px
 
     &__slide
         @extend .interviews__slide
@@ -9,7 +17,11 @@
         @extend .interviews__image
         width: 100%
         & > img
+            display: block
             width: 100%
+            @media($MOBILE)
+                width: 80%
+                margin: 0 auto
 
     &__left
         width: min(516px, 100%)
@@ -25,6 +37,10 @@
             transition: opacity .2s
             &.current
                 opacity: 1
+        @media ($MOBILE)
+            height: unset
+            & > *
+                opacity: 1
 
     &__block
         margin-top: 24px
@@ -34,3 +50,5 @@
     &__svg[style]
         position: absolute
         background-position: 0 100%
+        @media ($MOBILE)
+            all: unset !important

@@ -8,14 +8,27 @@ $BREAKPOINT_TITLE: 999px
     background-size: auto
     background-position: 100% 100%
     height: 800px
+    @media ($MOBILE)
+        background-image: none
+        height: unset
+
+    &__mobimg
+        display: none
+        width: 100%
+        @media ($MOBILE)
+            display: block
 
     &__svg
         position: absolute
         top: 0
         right: 0
+        @media ($MOBILE)
+            display: none
 
-    &__container
+    &__container.container
         padding-bottom: 114px
+        @media ($MOBILE)
+            width: 100%
     &__back
         position: absolute
         top: 0
@@ -38,14 +51,23 @@ $BREAKPOINT_TITLE: 999px
         font-weight: 500
         font-size: 24px
         line-height: 36px
-        width: min(96%,735px)
+        width: min(90%,735px)
+        transform: rotate(0)
+        @media ($MOBILE)
+            background: #126B89
+            color: #fff
+            padding: 32px 20px
+            text-align: center
+            font-size: 18px
+            margin: -10% auto 0
+            line-height: 28px
 
     &__strong
         font-weight: 700
 
     &__title
         font-weight: 800
-        font-size: clamp(100px, 140/1150*100vw, 140px)
+        font-size: clamp(60px, 140/1150*100vw, 140px)
         line-height: 95%
         letter-spacing: -0.04em
         color: #249788
@@ -57,6 +79,7 @@ $BREAKPOINT_TITLE: 999px
             flex-direction: column
             align-items: center
             justify-content: start
+            text-align: center
 
     &__ticket
         position: absolute
@@ -80,6 +103,10 @@ $BREAKPOINT_TITLE: 999px
         @media (width < $BREAKPOINT_TITLE)
             position: static
             transform: rotate(-6deg)
+            padding: 20px
+            font-size: 24px
+            width: 199px
+            height: 150px
 
     &__img
         height: 100%

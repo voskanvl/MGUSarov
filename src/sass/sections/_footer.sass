@@ -1,10 +1,14 @@
 .footer
     background: #126B89
     &__container.container
-        padding: 43px 80px
+        padding: 43px 0
         color: #fff
         display: flex
-        justify-content: space-between
+        flex-wrap: wrap
+        justify-content: center
+        row-gap: 50px
+        // @media ($MOBILE)
+        //     justify-content: center
 
     &__logo
         filter: invert(1)
@@ -12,3 +16,11 @@
     & .socials
         display: flex
         column-gap: 16px
+
+    &__wrap
+        display: flex
+        flex-direction: row-reverse
+        column-gap: calc(24/1920*100vw)
+        font-size: 16px
+        font-weight: 400
+        align-items: baseline

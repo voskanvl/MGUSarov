@@ -2,14 +2,17 @@
     background: #126B89
     color: #fff
     position: relative
+    height: 526px
 
     &__container
         display: grid
         grid-template-columns: repeat(2,1fr)
         align-items: end
+        height: 100%
+        @media ($MOBILE)
+            grid-template-columns: 100%
 
     &__right
-        grid-column: 2 / 3
         padding: 120px 0
 
     &__plug
@@ -44,4 +47,6 @@
     &__img
         display: block
         align-self: end
-        width: 100%
+        // width: 100%
+        position: absolute
+        bottom: 0
