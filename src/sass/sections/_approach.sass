@@ -63,8 +63,10 @@
         @media ($MOBILE)
             grid-area: 1 / 1 / 2 / 2
 
-    & > .interviews__svg[src]
+    &__svg
+        position: absolute
         @media ($MOBILE)
-            top: 100px !important
+            right: unset !important
+            top: 250px !important
             width: 80%
             left: -43px

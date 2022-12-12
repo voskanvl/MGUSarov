@@ -53,16 +53,14 @@
         & > .interviews__text + .interviews__text
             margin-top: 16px
 
-    &__svg
+    &__svg.image-svg
         position: absolute
-    //     --src: none
-    //     width: 50%
-    //     height: 100%
-    //     background: var(--src) no-repeat
-    //     background-position: 100% 50%
+        @media ($MOBILE)
+            height: min(495px, 66vh) !important
 
     &__img:nth-child(1)
         width: 100%
+
     &__img:nth-child(2)
         width: 80%
         @media ($MOBILE)
