@@ -1,5 +1,5 @@
 mixin scrollText(className, arr)
-    .scroll(class=className+"__scroll")
+    .scroll(class=className+"__scroll cover-mask")
         block
         each i in arr
             .lead(class=[className+"__post",className+"__lead"].join(" "), data-post=i.id)!= i.lead 

@@ -82,3 +82,13 @@ button.splide__arrow svg
     background: var(--src) no-repeat
     background-position: 100% 50%
     background-size: cover
+
+.cover-mask
+    $lg: linear-gradient(#0000, #000 10%, #000 90%, #0000 )
+    mask-image: $lg
+    -webkit-mask-image: $lg
+    -moz-mask-image: $lg
+    @media ($MOBILE)
+        mask-image: unset
+        -webkit-mask-image: unset
+        -moz-mask-image: unset

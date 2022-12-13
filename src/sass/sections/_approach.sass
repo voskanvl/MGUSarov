@@ -52,6 +52,7 @@
         @extend .interviews__scroll
         gap: unset
         height: 630px
+        padding: 50px 0 200px
 
         & > *:not(:has(.text-svg)) + *
             margin-top: 2em
@@ -64,6 +65,9 @@
         width: min(480px,100%)
         @media ($MOBILE)
             transform: rotateY(180deg)
+
+    &__left
+        position: relative
 
     &__right
         @media ($MOBILE)
@@ -85,3 +89,8 @@
         position: absolute
         right: 0
         transform: translateY(-100%)
+
+    #approach__scema
+        display: none
+        @media ($MOBILE)
+            display: block

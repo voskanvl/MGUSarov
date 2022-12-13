@@ -7,7 +7,7 @@ section.approach
         each svg in value.svgs
             img.approach__svg(src=svg.img, style=`top:${svg.top?svg.top:"unset"}; left:${svg.left?svg.left:"unset"}; right:${svg.right?svg.right:"unset"}; bottom:${svg.bottom?svg.bottom:"unset"}; transform:${svg.transform?svg.transform:"unset"}; z-index:${svg.zIndex?svg.zIndex:"unset"}`)
     .approach__container.container.grid
-            .approach__left 
+            .approach__left.cover-mask 
                 +scrollText("approach", approach)
                     if(value.title) 
                         .approach__title.title(style="opacity:1;")= value.title

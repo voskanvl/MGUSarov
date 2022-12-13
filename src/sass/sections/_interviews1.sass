@@ -1,14 +1,17 @@
 .interviews1
     @extend .interviews
     height: 800px
+    margin-bottom: 20px
     @media ($MOBILE)
         height: unset
 
     &__container
         @media($MOBILE)
             justify-items: center
-            padding-top: 58px
+            padding-top: 58px 0
             row-gap: 52px
+            width: 100% !important
+            padding: 0
 
     &__slide
         @extend .interviews__slide
@@ -28,7 +31,7 @@
         display: flex
         flex-direction: column
         // row-gap: 2em
-        padding-bottom: 200px
+        padding: 200px 0
         & > *
             opacity: 0.5
             transition: opacity .2s
@@ -39,6 +42,7 @@
             margin-top: 2em
 
         @media ($MOBILE)
+            padding: 32px 0
             height: unset
             & > *
                 opacity: 1
@@ -61,3 +65,8 @@
 
     &__post
         @extend .interviews__post
+        @media ($MOBILE)
+            padding: 0 1em
+
+    & .text-svg
+        width: unset
