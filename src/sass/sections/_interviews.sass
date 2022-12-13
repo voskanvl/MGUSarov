@@ -33,7 +33,7 @@
         height: var(--height)
         display: flex
         flex-direction: column
-        row-gap: 2em
+        // row-gap: 2em
         padding-bottom: 200px
         & > *
             opacity: 0.5
@@ -41,6 +41,10 @@
             z-index: 2
             &.current
                 opacity: 1
+
+        & > *:not(:has(.text-svg)) + *
+            margin-top: 2em
+
         @media ($MOBILE)
             &.scroll
                 height: auto
@@ -65,3 +69,20 @@
         width: 80%
         @media ($MOBILE)
             left: calc(100/768*100vw) !important
+
+    &__post > .text-svg
+        display: none
+        margin: 0 auto
+        @media ($MOBILE)
+            display: block
+
+    &__post > .text-svg.svg-left
+        position: absolute
+        right: -8px
+        transform: translateY(-100%)
+
+        &#interviews1-pluses
+            transform: translateY(-20%)
+
+        &:has(.text-svg)
+            padding: 0

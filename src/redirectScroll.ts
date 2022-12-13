@@ -1,4 +1,4 @@
-const OFFSET = (160 / 1920) * window.innerWidth;
+// const OFFSET = (160 / 1920) * window.innerWidth;
 
 export default function redirectScroll(
     blockElement: HTMLElement | null,
@@ -18,7 +18,7 @@ export default function redirectScroll(
             scrollElement.scrollTop + scrollElement.offsetHeight === scrollElement.scrollHeight;
         const ScrollOnTop = scrollElement.scrollTop <= 0;
 
-        const { top, height } = blockElement.getBoundingClientRect();
+        const { top } = blockElement.getBoundingClientRect();
 
         if (deltaY > 0 && !ScrollOnBottom && top < 0) {
             startRedirect();

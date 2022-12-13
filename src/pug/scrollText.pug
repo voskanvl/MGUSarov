@@ -3,5 +3,6 @@ mixin scrollText(className, arr)
         block
         each i in arr
             .lead(class=[className+"__post",className+"__lead"].join(" "), data-post=i.id)!= i.lead 
-            each t in i.text
-                .text(class=[className+"__post",className+"__text"].join(" "), data-post=i.id)!= t
+            if i.text
+                each t in i.text
+                    .text(class=[className+"__post",className+"__text"].join(" "), data-post=i.id)!= t

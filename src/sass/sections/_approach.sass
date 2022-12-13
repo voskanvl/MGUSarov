@@ -51,7 +51,12 @@
         z-index: 2
     &__scroll
         @extend .interviews__scroll
+        gap: unset
         height: 630px
+
+        & > *:not(:has(.text-svg)) + *
+            margin-top: 2em
+
         @media ($MOBILE)
             height: unset
     &__img
@@ -70,3 +75,7 @@
             top: 250px !important
             width: 80%
             left: -43px
+
+    &__post:has(#approach__y-kt)
+        display: flex
+        justify-content: end

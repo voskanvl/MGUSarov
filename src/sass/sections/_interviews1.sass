@@ -27,13 +27,17 @@
         height: var(--height)
         display: flex
         flex-direction: column
-        row-gap: 2em
+        // row-gap: 2em
         padding-bottom: 200px
         & > *
             opacity: 0.5
             transition: opacity .2s
             &.current
                 opacity: 1
+
+        & > *:not(:has(.text-svg)) + *
+            margin-top: 2em
+
         @media ($MOBILE)
             height: unset
             & > *
@@ -54,3 +58,6 @@
             width: 192px
             height: 275px
             background-size: 100%
+
+    &__post
+        @extend .interviews__post
