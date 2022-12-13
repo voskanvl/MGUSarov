@@ -8,7 +8,7 @@
     &__container.container
         padding: 125px 0
         @media ($MOBILE)
-            padding: 20px 0
+            padding: 0
 
     &__slide
         @extend .interviews__slide
@@ -26,6 +26,11 @@
             width: 100%
             background-position: 0% 100%
             background-size: auto
+        @media ($MOBILE)
+            display: none
 
     &__img
         width: 100%
+
+    &__post:has(#interviews2__quotes)
+        margin: -1em 0 -1em auto

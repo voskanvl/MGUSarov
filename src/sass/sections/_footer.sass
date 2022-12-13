@@ -4,9 +4,8 @@
         padding: 43px 0
         color: #fff
         display: flex
-        flex-wrap: wrap
-        justify-content: center
-        row-gap: 50px
+        flex-wrap: wrap-reverse
+        row-gap: 24px
         // @media ($MOBILE)
         //     justify-content: center
 
@@ -19,10 +18,15 @@
 
     &__wrap
         display: flex
-        flex-direction: row-reverse
         flex-wrap: wrap
         column-gap: calc(24/1920*100vw)
         font-size: 16px
         font-weight: 400
         align-items: baseline
-        justify-content: center
+
+    &__right
+        @media ($MOBILE)
+            order: 0
+
+    & .logo
+        justify-content: start

@@ -3,7 +3,6 @@
     position: relative
     @media ($MOBILE)
         background: url("../../../assets/images/Texture-inteviews1.png")
-
     &__container
         height: 808px
         @media ($MOBILE)
@@ -59,6 +58,8 @@
 
         @media ($MOBILE)
             height: unset
+            padding-bottom: 50px
+
     &__img
         width: min(480px,100%)
         @media ($MOBILE)
@@ -79,3 +80,8 @@
     &__post:has(#approach__y-kt)
         display: flex
         justify-content: end
+
+    #approach__pluses
+        position: absolute
+        right: 0
+        transform: translateY(-100%)
