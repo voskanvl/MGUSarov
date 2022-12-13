@@ -54,7 +54,9 @@
         height: 630px
         padding: 50px 0 200px
 
-        & > *:not(:has(.text-svg)) + *
+        // & > *:not(:has(.text-svg)) + *
+        //     margin-top: 2em
+        & > * + *
             margin-top: 2em
 
         @media ($MOBILE)
@@ -64,7 +66,7 @@
     &__img
         width: min(480px,100%)
         @media ($MOBILE)
-            transform: rotateY(180deg)
+            transform: rotateZ(2.15deg) rotateY(180deg)
 
     &__left
         position: relative
@@ -81,9 +83,11 @@
             width: 80%
             left: -43px
 
-    &__post:has(#approach__y-kt)
-        display: flex
-        justify-content: end
+    #approach__y-kt
+        display: block
+        position: relative
+        width: max-content
+        margin-left: auto
 
     #approach__pluses
         position: absolute

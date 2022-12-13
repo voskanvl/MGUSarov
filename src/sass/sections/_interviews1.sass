@@ -25,6 +25,8 @@
 
     &__left
         width: min(516px, 100%)
+        @media ($MOBILE)
+            margin-top: 58px
 
     &__scroll
         height: var(--height)
@@ -38,7 +40,7 @@
             &.current
                 opacity: 1
 
-        & > *:not(:has(.text-svg)) + *
+        & > * + *
             margin-top: 2em
 
         @media ($MOBILE)

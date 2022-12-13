@@ -56,7 +56,7 @@ $BREAKPOINT_TITLE: 999px
         font-size: 24px
         line-height: 36px
         width: min(90%,735px)
-        transform: rotate(0)
+        rotate: 0deg
         @media ($MOBILE)
             background: #126B89
             color: #fff
@@ -78,11 +78,11 @@ $BREAKPOINT_TITLE: 999px
         +wid(735px)
         margin-left: 0
         position: relative
-        @media (width < $BREAKPOINT_TITLE)
+        @media (max-width: $BREAKPOINT_TITLE)
             display: flex
             flex-direction: column
             align-items: center
-            justify-content: start
+            justify-content: flex-start
             text-align: center
 
     &__ticket
@@ -104,7 +104,7 @@ $BREAKPOINT_TITLE: 999px
         text-align: center
         color: #fff
         letter-spacing: normal
-        @media (width < $BREAKPOINT_TITLE)
+        @media (max-width: $BREAKPOINT_TITLE)
             position: static
             transform: rotate(-6deg)
             padding: 20px

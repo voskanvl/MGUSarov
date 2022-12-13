@@ -5,4 +5,7 @@ mixin scrollText(className, arr)
             .lead(class=[className+"__post",className+"__lead"].join(" "), data-post=i.id)!= i.lead 
             if i.text
                 each t in i.text
-                    .text(class=[className+"__post",className+"__text"].join(" "), data-post=i.id)!= t
+                    if t.content
+                        .text(class=[className+"__post",className+"__text",className+"__contented"].join(" "), data-post=i.id, style="margin-top: 0")!= t.content
+                    else    
+                        .text(class=[className+"__post",className+"__text"].join(" "), data-post=i.id)!= t
